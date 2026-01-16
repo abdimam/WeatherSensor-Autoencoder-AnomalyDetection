@@ -1,0 +1,19 @@
+paths:
+  train_data: "data/Training set big.csv"
+  artifacts_dir: "artifacts/"
+
+training:
+  batch_size: 32
+  epochs: 50
+  learning_rate: 0.001
+  device: "cuda"  # or "cpu"
+
+model:
+  input_dim: 31
+  latent_dim: 8
+  hidden_layers: [16]
+
+
+monitoring:
+  spe_threshold: null  # will be computed after training
+  t2_threshold: null
